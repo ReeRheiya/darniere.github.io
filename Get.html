@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <title>Nav Bar</title>
+</head>
+<body>
+    <center>
+        <img src="Kaneki ken.jpg" width="1550px" height="250px">
+        <div class="w3-container w3-card-"></div>
+    </center>
+    <div class="w3-bar w3-light-green">
+        <button class="w3-bar-item w3-button" onclick="np('Home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="np('Profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="np('Hobby')">Hobby</button>
+        <button class="w3-bar-item w3-button" onclick="np('Influence')">Influence</button>
+        <button class="w3-bar-item w3-button" onclick="np('College')">College</button>
+        <button class="w3-bar-item w3-button" onclick="np('Diary')">Diary</button>
+    </div>
+    <div id="Home" class="w3-container Bio w3-animate-left" style="display: none;">
+        <h2>Welcome to Frederick's Page</h2>
+        <p>In here u will know hows frederick is,so keep ini touch</p>
+    </div>
+    <div id="Profile" class="w3-container Bio w3-animate-left" style="display: none;">
+        <h2>Profile</h2>
+        <p>
+            <img src="Fred.jpg" width="300px" height="400px">
+            <br>
+            Seorang Mahasiswa Teknik Informatika yang mempunyai banyak hobby,perfeksionis,sok kuat sendiri,
+            songong bet dah.
+            namun <i>"Goblok"</i> dalam hal percintaan n gak <i>"peka"</i>-an
+            <br>
+            <table>
+            <tr><td>Frederick Cornelius N</td></tr>
+            <tr><td>10122084</td></tr>
+            <tr><td>IF-3</td></tr>
+            </table>
+        </p>
+    </div>
+    <div id="Hobby" class="w3-container Bio w3-animate-left" style="display: none;">
+        <h2>Hobby</h2>
+        <p>In here u will know hows frederick is,so keep ini touch</p>
+    </div>
+    <div id="Influence" class="w3-container Bio w3-animate-left" style="display: none;">
+        <h2>Influence</h2>
+        <h3>Jesus</h3>
+        <p>Second is my mom n last is Tim henson who influence me on guitar</p>
+    </div>
+    <div id="College" class="w3-container Bio w3-animate-left" style="display: none;">
+        <h2>College</h2>
+        <p>
+            <img src="Unikom.jpg">
+            <br>
+            Kampus Gua
+        </p>
+    </div>
+    <div id="Diary" class="w3-container Bio w3-animate-left" style="display: none;">
+        <h2>Diary</h2>
+        <p>these days the blue pills is everywhere</p>
+    </div>
+<script>
+    function np(namakota) {
+    var i;
+    var x = document.getElementsByClassName("Bio");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+        }
+        document.getElementById(namakota).style.display = "block";
+    }
+</script>
+</body>
+</html>
